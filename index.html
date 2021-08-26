@@ -49,14 +49,14 @@
               <!-- End: Search button -->
 
         </div>
-<div id="slider">
+        <div id="slider">
     <div class="text-content">
         <h2 class="text-heading">FươngFuho</h2>
         <div class="text-description">Chuyên Gia Sống Ảo</div>
     </div>
-</div>
+        </div>
 
-<div id="content">
+        <div id="content">
     <div class="content-section">
         <h2 class="section-heading">Im vanPhuong</h2>
         <p class="section-sub-heading">Anh là simple trong giới chụp ảnh . Ảnh anh chụp cứ là one shot</p>
@@ -64,17 +64,18 @@
             “Và nếu được hỏi ảnh nào là ảnh tôi thích nhất? Câu trả lời sẽ là đó là bức tôi sẽ chụp cùng em vào ngày
             mai””
         </p>
-        <div class="member-list">
+        <div class="row member-list">
             <h3 class="section-heading">My Teams</h3>
-            <div class="member-item">
+
+            <div class=" col col-third text-center">
                 <p class="member-name">No Name</p>
                 <img src="./assets/img/Team/IMG_0013.jpg" alt="" class="member-img">
             </div>
-            <div class="member-item">
+            <div class=" col col-third text-center">
                 <p class="member-name">Not Sơn</p>
                 <img src="./assets/img/Team/IMG_0022-1.png" alt="" class="member-img">
             </div>
-            <div class="member-item">
+            <div class=" col col-third text-center">
                 <p class="member-name">Not me</p>
                 <img src="./assets/img/Team/IMG_0092-1.jpg" alt="" class="member-img">
             </div>
@@ -91,32 +92,32 @@
                         <li>Tháng 12 <span class="quantity ">3</span></li>
                     </ul>
                     <!-- Place -->
-                    <div class="places-list">
-                        <div class="place-item">
+                    <div class=" row places-list">
+                        <div class="col col-third">
                             <img src="./assets/img/Places/6.png" alt="Phố Đi Bộ" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Văn Phương</h3>
                                 <div class="place-time">Chiến thần Outdoor</div>
                                 <p class="place-decs">Book Lịch Chụp Trước </p>
-                                <a href="#" class="place-but-btn">BOOK NOW</a>
+                                <button class="place-but-btn js-buy-ticket">BOOK NOW</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <img src="./assets/img/Places/IMG_4947-1.jpg" alt="Phố Đi Bộ" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Phương ne</h3>
                                 <div class="place-time">Ông hoàng tỉa gái</div>
                                 <p class="place-decs">Book Lịch Chụp Trước </p>
-                                <a href="#" class="place-but-btn">BOOK NOW</a>
+                                <button class="place-but-btn js-buy-ticket">BOOK NOW</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <img src="./assets/img/Places/IMG_9232-1.png" alt="Phố Đi Bộ" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Not Phương</h3>
                                 <div class="place-time">Chúa tể Indoor</div>
                                 <p class="place-decs">Book Lịch Chụp Trước </p>
-                                <a href="#" class="place-but-btn">BOOK NOW</a>
+                                <button class="place-but-btn js-buy-ticket">BOOK NOW</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -127,15 +128,60 @@
         <!--Contact section-->
         <div class="content-section">
             <h2 class="section-heading">CONTACT</h2>
-            <a href="https://www.facebook.com/phuongfoto12" class="href">FB: Văn Phương</a>
+            <!-- <a href="https://www.facebook.com/phuongfoto12" class="href">FB: Văn Phương</a> -->
+            <p class="section-sub-heading">Liên hệ ngay</p> 
 
-</div>
-</div>
+        </div>
+        
+        </div>
 
-<div id="footer">
+        <div id="footer">
 
-</div>
-</div>
+        </div>
+    </div>
+    
+     <div class="modal">
+         <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                    <i class="modal-heading-icon ti-bag"></i>
+                    Tickets
+            </header>
+
+
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person   
+                </label>
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many">
+           
+                <label for="ticket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Sent to  
+                </label>
+
+                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email...">
+
+                <button id="buy-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+                
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+         </div>
+     </div>
+
+
+<script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+</script>
+
 </body>
 
 </html>

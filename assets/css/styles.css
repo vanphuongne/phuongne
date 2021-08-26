@@ -18,12 +18,32 @@ html {
 3 màu sắc
 4 Kiểu dáng (Kiểu chữ , Hình tròn , Vuông)
  */
+ /* Common */
  .clear{
    clear: both;
  }
  .text-white{
    color: #fff !important;
  }
+.text-center{
+    text-align: center !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+ /* Main */
 #main {
 }
 
@@ -155,18 +175,16 @@ margin: 15px 0;
   text-align: justify;
   line-height: 1.5;
 }
-
-#content .member-item{
-display: inline-block;
-width: 32%;
-text-align: center;
-text-align: 48px;
-}
 #content .member-name{
   margin: 15px 0;
+
 }
-#content .member-item img{
-  width: 154px;
+#content  .member-img{
+  /* display: block;
+  width: 200px;
+  margin: 20px auto;
+  border-radius: 4px; */
+  width: 100%;
   margin-bottom: 15px;
   border-radius: 4px;
 }
@@ -177,6 +195,8 @@ padding: 32px 0;
 /*Tour section*/
 .tour-section{
   background-color: #000;
+  margin-top: 450px;
+
   
 }
 .tickets-list{
@@ -210,14 +230,8 @@ padding: 32px 0;
 }
 /* Place */
 .places-list{
-  margin: 32px -8px 0;
- padding-bottom: 48px;
-
-}
- .place-item{
-float: left;
-width: 33.33333%;
-padding:0 8px ;
+margin-top: 32px;
+margin-bottom: 48px;
 }
 .place-img{
   width: 100%;
@@ -258,10 +272,10 @@ padding:0 8px ;
   display: inline-block;
 }
 
-/* Foot section */
+
 #footer {
 }
- /* Model */
+ /* Modal */
  .modal{
    position: fixed;
    top: 0;
@@ -269,4 +283,85 @@ padding:0 8px ;
    left: 0;
    bottom: 0;
    background: rgba(0, 0, 0, 0.4);
-  }
+    display: none ;
+    align-items: center;    
+    justify-content: center;
+
+}
+.model.open{
+    display: flex;
+}
+.modal-container{
+    background:#fff;
+    width: 900px;
+    max-width: calc(100% -32px);
+    min-height: 200px;
+    position : absolute;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color:#fff;
+    padding: 12px;
+    cursor: pointer; /*di chuột vào hiện ra bàn tay */
+    opacity: 0.9;
+}
+.modal-header {
+    letter-spacing: 4px;
+}
+ .modal-header{
+    background: #009688 ;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+.modal-heading-icon{
+    
+}
+#buy-tickets{
+background: #009688;
+border:none;
+color: #fff;
+width: 100%;
+font-size: 15px;
+text-transform: uppercase;
+padding: 15px;
+cursor: pointer;
+}
+#buy-tickets:hover{
+    opacity: 0.9;
+}
+.modal-footer{
+    text-align: right;
+    padding: 16px;
+
+}
+.modal-footer a{
+    color: #2196f3;
+}
+
+
+
+
+/* Foot section */
