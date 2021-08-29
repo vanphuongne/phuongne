@@ -5,7 +5,9 @@
   box-sizing: border-box;
 }
 html {
-  font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
+scroll-behavior: smooth; /* di chuyển giữa các thanh mượt hơn */
+
 }
 /*
 1. từ ngoài vào trong
@@ -311,10 +313,35 @@ margin-top: 32px;
     width: 100%;
     border: 1px solid #ccc
 }
-
+/* map section */
+.map-section img{
+    width: 100%;
+}
 
 #footer {
+padding:64px 16px ;
+text-align: center;
 }
+#footer .socials-list{
+    font-size: 20px;
+
+}
+#footer .socials-list a{
+color: rgba(0, 0, 0, 0.6);
+text-decoration: none; /* bỏ gạch chân trong thẻ a */
+}
+#footer .copyright a
+#footer .socials-list a:hover{
+color: rgba(0, 0, 0, 0.4);
+}
+#footer .copyright{
+   margin-top: 15px;
+color: rgba(0, 0, 0, 0.6);
+}
+#footer .copyright a{
+    margin-top: 15px;
+ color: rgba(0, 0, 0, 0.6);
+ }
  /* Modal */
  .modal{
    position: fixed;
