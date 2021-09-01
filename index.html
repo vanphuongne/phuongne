@@ -7,6 +7,7 @@
     <title>Trang web ảnh của Phương</title>
     <link rel="icon" href="./assets/img/icon/icons-camera.png" />    
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <meta property="og:image" content="./assets/img/Slider/silder1.jpg" />
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -15,7 +16,7 @@
         <div id="header">
             <!-- Begin: Nav -->
             <ul id="nav">
-                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">HOME</a></li>
                 <li>
                     <a href="#img-me">
                         Ảnh Của Phương
@@ -23,10 +24,7 @@
                     </a>
                     <ul class="subnav">
                         <li><a href="#">Tất Cả</a></li>
-                        <li><a href="#">Indoor</a></li>
-                        <li><a href="#">Outdoor</a></li>
                         <li><a href="#">Couple</a></li>
-                        <li><a href="#">Coffe</a></li>
                         <li><a href="#">Áo Dài</a></li>
                         <li><a href="#">Kỉ Yếu</a></li>
                         <li><a href="#">Cúc Họa Mi</a></li>
@@ -49,6 +47,9 @@
               <div class="search-btn">
                   <i class="search-icon ti-search"></i>
               </div>
+              <div id="mobile-menu" class="mobile-menu-btn">
+                  <i class="menu-icon ti-menu"></i>
+              </div>
               <!-- End: Search button -->
 
         </div>
@@ -65,21 +66,20 @@
         <h2 class="section-heading">Im vanPhuong</h2>
         <p class="section-sub-heading">Anh là simple trong giới chụp ảnh . Ảnh anh chụp cứ là one shot</p>
         <p class="about-content">
-            “Và nếu được hỏi ảnh nào là ảnh tôi thích nhất? Câu trả lời sẽ là đó là bức tôi sẽ chụp cùng em vào ngày
-            mai””
+            “Và nếu được hỏi bức ảnh mà tôi thích nhất ? Câu trả lời sẽ là đó là bức tôi sẽ chụp cùng em vào ngày mai”
         </p>
         <div id ="my-team" class="row member-list">
             <h3 class="section-heading">My Teams</h3>
 
-            <div class=" col col-third text-center">
+            <div class=" col col-third s-col-full text-center">
                 <p class="member-name">No Name</p>
                 <img src="./assets/img/Team/IMG_0013.jpg" alt="" class="member-img">
             </div>
-            <div class=" col col-third text-center">
+            <div class=" col col-third s-col-full text-center">
                 <p class="member-name">Not Sơn</p>
                 <img src="./assets/img/Team/IMG_0022-1.png" alt="" class="member-img">
             </div>
-            <div class=" col col-third text-center">
+            <div class=" col col-third s-col-full text-center">
                 <p class="member-name">Not me</p>
                 <img src="./assets/img/Team/IMG_0092-1.jpg" alt="" class="member-img">
             </div>
@@ -97,31 +97,31 @@
                     </ul>
                     <!-- Place -->
                     <div class=" row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/Places/6.png" alt="Phố Đi Bộ" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Văn Phương</h3>
                                 <div class="place-time">Chiến thần Outdoor</div>
                                 <p class="place-decs">Book Lịch Chụp Trước </p>
-                                <button class="btn js-buy-ticket">BOOK NOW</button>
+                                <button class="btn js-buy-ticket s-full-width">BOOK NOW</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/Places/IMG_4947-1.jpg" alt="Phố Đi Bộ" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Phương ne</h3>
                                 <div class="place-time">Ông hoàng tỉa gái</div>
                                 <p class="place-decs">Book Lịch Chụp Trước </p>
-                                <button class="btn js-buy-ticket">BOOK NOW</button>
+                                <button class="btn js-buy-ticket s-full-width">BOOK NOW</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/Places/IMG_9232-1.png" alt="Phố Đi Bộ" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Not Phương</h3>
                                 <div class="place-time">Chúa tể Indoor</div>
                                 <p class="place-decs">Book Lịch Chụp Trước </p>
-                                <button class="btn js-buy-ticket">BOOK NOW</button>
+                                <button class="btn js-buy-ticket s-full-width">BOOK NOW</button>
                             </div>
                         </div>
 
@@ -136,31 +136,31 @@
                 <p class="section-sub-heading">Liên hệ ngay</p> 
 
                 <div class="row contact-content">            <!-- <div class="col"> -->
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p> <i class=" ti-location-pin"></i>Hà Nội</p>
                         <p> <i class=" ti-mobile"></i>0949988961</p>
                         <p> <i class=" ti-email"></i>nv.phuong201@gmail.com</p>
                     </div>
                     
-                    <div class="col col-half contact-form">
-                        <from action="">
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
                             <div class="row">
-                                <div class="col col-half">
-                                    <input type="text" name=""placeholder="Name" required id="" class="form-control">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" name=""placeholder="Name"  class="form-control" required>
                                 </div>
-
-                                <div class="col col-half">
-                                    <input type="email" name=""placeholder="Email" required id="" class="form-control">
+                                
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" name=""placeholder="Email"  class="form-control" required>
                                 </div>
                             </div>
                             <div class="row mt-8">
                                 <div class="col col-full">
-                                    <input type="text" name=""placeholder="Message" required id="" class="form-control">
+                                    <input type="text" name=""placeholder="Message"  class="form-control" required>
                                 </div>
                             </div>
-                            <input class=" btn pull-right mt-16" type="submit" value="SEND">
+                            <input class=" btn pull-right mt-16 s-full-width" type="submit" value="SEND">
 
-                        </from>
+                        </form>
                     </div>               
                 </div>
            </div>
@@ -179,7 +179,7 @@
                 <a href=""><i class="ti-flickr"></i></a>
                 <a href=""><i class="ti-linkedin"></i></a>
             </div>
-            <p class="copyright">ALL RIGHTS RESERVED <a href="">FuongPyke</a></p>
+            <p class="copyright">ALL RIGHTS RESERVED <a href="#">FuongPyke</a></p>
         </div>
                 <!-- end footer -->
     </div>
@@ -249,7 +249,49 @@
                 event.stopPropagation()
             })
 
+    </script>
 
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        // Đóng/ Mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed =header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height ='auto';   
+            } else {
+                header.style.height =null;
+            }
+        }
+        // Khai báo biến header/ mobile/ headerHeight
+        // Đóng/ Mở mobile menu
+        // Khi click vào mobileMenu thì sẽ chạy hàm như sau: 
+            // Khai báo biến isclosed = header.clientHeight bằng với headerHeight (biến True False);
+            // Nếu biến isClosed đúng thì header.style.height ='auto' --> sổ ra 
+            // Nếu biến isClosed sai thì header.style.height = null --> đóng vào 
+
+        // Tự động đóng khi chọn menu\
+        var menuItems =document.querySelectorAll('#nav li a[href*="#"]');
+        for (i=0; i<menuItems.length;i++) {
+            var menuItem = menuItems[i];
+
+
+            menuItem.onclick =function() {
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }  else{
+                    header.style.height =null;
+
+                }
+            }
+        }
+        //Khai báo biến menuItems là các thẻ nav li a có chứa dấu #
+        // Chạy vòng lặp for (khai báo biến i=0; nếu i nhỏ hơn số lượng MenuItems; tăng i lên 1) Nếu i thỏa mãn chạy: 
+            // Khai báo biến tạm menuItem = truyền giá trị của menuItems vị trí i vào;
+            // Khi click vào menuItem chạy hàm 
+               //header.style.height =null; --> giấu thanh đi 
     </script>
 
 </body>
