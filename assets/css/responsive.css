@@ -1,13 +1,81 @@
 /* PC */
-@media(min-width:1024px){
+@media(min-width:64em) {
 
 } 
+/* tablet and mobile */
+@media(max-width:63.9375em){
+
+
+    #nav{
+        display: block;    /* thanh Home dài ra cả hàng */
+    }
+        #nav .subnav a{
+        padding: 5px 12px;
+    }
+    #nav > li{
+        display: block;    /* menu từ nằm ngang thành dọc */
+    }
+    #nav > li:first-child{
+        display: inline-block; /* chỉ chọn mỗi chữ home đầu tiên trong các thẻ */
+    }
+
+    #nav .subnav{
+        position:initial;
+        background-color: #333; /* in ra con của 'ảnh của phương' */
+    }
+    
+    #nav li a{
+        padding: 1px 24px;/* tăng độ dài cho các nút bấm trong thuộc tính con của 'Ảnh Của Phương' */
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px; /* đổi màu nền cho thuộc tính con của 'ảnh của Phương' */
+    }
+    #header{
+        overflow: hidden;   /* ẩn hiện thanh thanh menu */
+    }
+    #header .mobile-menu-btn{ 
+        display: block;    /* hiện nút menu 3 sọc */
+    }
+    #header .search-btn{
+        display: none;    /* ẩn nút search */
+    }
+    #content .about-content{
+        text-align: center;    /* in chữ ra giữa màn hình  */
+    }
+    
+
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact-info{
+        line-height: 2;    /* tăng độ dày giữa các dòng */
+    }
+    .contact-submit-btn{
+        font-size: 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+    .socials-list{
+        font-size: 48px;
+    }
+    /* khoảng cách các icon phần cộng đồng */
+    #footer .socials-list a{
+        margin: 0 4px;
+    }
+    #footer .copyright{
+        padding: 12px 0;
+        display:inline-block;
+    }
+}
 /* Tablet */
-@media(min-width:740px)and (max-width: 1023px){
-   
+@media(min-width:46.25em) and (max-width: 63.9375em) {
+
 }
 /* Mobie */
-@media(max-width:740px){
+@media(max-width:46.1875em){
     .s-full-width,
     .s-col-full{
         width: 100%;
@@ -15,40 +83,9 @@
     .s-mt-8{
         margin-top: 8px!important;
     }
-    #nav{
-        display: block;
-    }
-    #nav > li{
-        display: block;
-    }
-    #nav > li:first-child{
-        display: inline-block;
-    }
-    #nav .subnav{
-        position:initial;
-        background-color: #333;
-    }
-    #nav .subnav a {
-        color: #fff;
-        padding: 5px 41px;
-    }
-    #nav li a{
-        padding:1px 24px;
-    }
-    #header{
-        overflow: hidden;
-    }
-    #header .mobile-menu-btn{
-        display: block;
-    }
-    #header .search-btn{
-        display: none;
-    }
+
     .contact-form{
     margin-top: 16px;
-    }
-    #content .about-content{
-        text-align: center;
     }
     #slider .text-content {
         padding: 0 16px ;
@@ -57,6 +94,6 @@
          margin: 12px 0; 
     }
     #slider .text-heading {
-        font-size: 28x;
+        font-size: 28px;
     }
 }

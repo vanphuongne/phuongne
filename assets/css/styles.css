@@ -80,6 +80,7 @@ scroll-behavior: smooth; /* di chuyển giữa các thanh mượt hơn */
     display: inline-block;
     border: none;
     text-align: center;
+    -webkit-appearance: none;
   }
  /* Main */
 #main {
@@ -195,7 +196,9 @@ scroll-behavior: smooth; /* di chuyển giữa các thanh mượt hơn */
 
 }
 #slider .text-description {
-  margin: 20px 0;
+    font-size: 15px;
+  margin-top: 20px ;
+  text-shadow: 0 0 1px #000;
 }
 #content {
 }
@@ -324,8 +327,14 @@ margin-top: 16px;
 }
 .contact-info i[class*="ti-"]{
     width: 30px;
-    display: inline-block;
-    
+    display: inline-block;   
+}
+.contact-info a{
+    color: #4245ef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-form{
